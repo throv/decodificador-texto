@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fonte-principal: "Roboto", sans-serif;
+  --black: #090c02;
+  --red: #a72608;
+  --gray: #e6eed6;
+  --beige: #dde2c6;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  background-color: var(--gray);
+}
+
+header {
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0em;
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 1em;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+#inputText {
+  min-height: 300px;
+  max-width: 500px;
+  border: none;
+  border-radius: 24px;
+  padding: 1em;
+  font-size: 1.125rem;
+}
+
+#inputText::placeholder {
+  font-size: 2rem;
+  color: var(--red);
+  font-family: var(--fonte-principal);
+  font-weight: 900;
+}
+
+.aviso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.aviso__texto {
+  margin-left: 0.5em;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  padding: 1em;
+  border-radius: 24px;
+  margin-top: 1em;
+  max-width: 50%;
+  width: 100%;
+}
+
+.btn--cripto {
+  color: var(--beige);
+  background-color: var(--black);
+}
+
+.btn--descripto {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.btn--limpar {
+  background-color: var(--red);
+  color: var(--beige);
+}
+
+.btn:hover {
+  opacity: 70%;
+}
+
+.output {
+  background-color: var(--beige);
+  max-width: 350px;
+  min-height: 250px;
+  border-radius: 30px;
+  margin: 0.7em auto;
+  padding: 3em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.343);
+}
+
+#outputText {
+  text-align: center;
+}
+
+.outputText_titulo {
+  margin: 0;
+}
+
+.outputText__texto {
+  margin-top: 0.5em;
+}
+
+.rodape {
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 1em;
+  border-top: 2px solid var(--black);
+  background-color: var(--red);
+}
+
+.rodape__texto {
+  text-transform: uppercase;
+  font-weight: 900;
+}
